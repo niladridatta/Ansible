@@ -1,0 +1,10 @@
+---
+
+- name: "Current Time"
+  command: date
+  register: time
+
+- name: "Print Time"
+  debug:
+    msg: Current Time is '{{ time.stdout }}'
+
