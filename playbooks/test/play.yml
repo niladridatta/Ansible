@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+
+  vars:
+    - ansible_ssh_port: 32778
+
+  tasks:
+    - ping:
+
